@@ -1,7 +1,9 @@
 #include <iostream>
+#include "tensor.hpp"
 
 int main()
 {
-	std::cout << "Hello, World!" << std::endl;
+	const dl::tensor::Tensor<int> tensor{2, 5};
+	std::cout << tensor.data()[0];
 	return 0;
 }
