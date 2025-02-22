@@ -1,9 +1,11 @@
+#include <functional>
 #include <iostream>
 #include "tensor.hpp"
+#include "utils.hpp"
 
 int main()
 {
-	const dl::tensor::Tensor<int> tensor{2, 5};
-	std::cout << tensor.data()[0];
+	dl::tensor::Tensor<int> t{2, 3, 4};
+
 	return 0;
 }
