@@ -20,6 +20,7 @@ namespace dl::tensor
 		unsigned short _dim;
 		size_t _offset;
 		size_t _length;
+		bool _on_device;
 
 	public:
 		Tensor(std::initializer_list<size_t> shape);
